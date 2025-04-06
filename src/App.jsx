@@ -1,5 +1,8 @@
 import React from "react";
 import UserInfo from "./components/UserInfo";
+import projectsData from "./data/projects";
+import Project from "./components/Project";
+
 const App = () =>
 {
     return (
@@ -8,8 +11,10 @@ const App = () =>
                 <UserInfo />
             </div>
 
-            <div className="w-3/4">
-
+            <div className="space-y-4">
+                {projectsData.map((project) => (
+                    <Project project={project} />
+                ))}
             </div>
 
 
