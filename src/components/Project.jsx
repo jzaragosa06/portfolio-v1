@@ -5,6 +5,9 @@ function Project({ project })
 {
     return (
         <div className='bg-white shadow-md rounded-md p-6'>
+            <div className='w-full h-48 overflow-hidden rounded-2xl'>
+                <img src={project.image} alt="" className='h-full w-full object-cover' />
+            </div>
             <h2 className='text-lg font-semibold text-gray-600 mb-2' >{project.title}</h2>
             <p className='text-sm text-gray-600 mb-2'>{project.description}</p>
 
