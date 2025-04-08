@@ -1,38 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import UserInfo from "./components/UserInfo";
 import projectsData from "./data/projects";
 import Project from "./components/Project";
 
-const App = () =>
-{
+const App = () => {
+    const [selectedSection, setselectedSection] = useState("projects");
+
+    const handleNavigation = (section) => {
+        setselectedSection(section);
+    }
+
     return (
         <div className="min-h-screen bg-gray-100 flex">
             <div className="w-1/4 p-6">
                 <UserInfo />
             </div>
 
-            <div className="flex flex-col justify-center items-center gap-3">
-                <div className="rounded-3xl bg-orange-600 p-3 text-white">
+            {/* navigations */}
+            <div className="flex flex-col justify-center items-center gap-3 p-6">
+                <div className={`rounded-3xl p-3 text-white ${selectedSection === "projects"
+                        ? "bg-orange-600"
+                        : "bg-teal-600 hover:bg-orange-500"
+                    }`}
+                    onClick={() => handleNavigation("projects")}
+
+                >
                     Projects
                 </div>
-                <div className="rounded-3xl bg-teal-600 p-3 text-white">
+                <div className={`rounded-3xl p-3 text-white ${selectedSection === "experinces"
+                        ? "bg-orange-600"
+                        : "bg-teal-600 hover:bg-orange-500"
+                    }`}
+                    onClick={() => handleNavigation("experiences")}
+                >
                     Experience
                 </div>
-                <div className="rounded-3xl bg-teal-600 p-3 text-white">
+                <div className={`rounded-3xl p-3 text-white ${selectedSection === "articles"
+                        ? "bg-orange-600"
+                        : "bg-teal-600 hover:bg-orange-500"
+                    }`}
+                    onClick={() => handleNavigation("articles")}
+                >
                     Articles
                 </div>
-                <div className="rounded-3xl bg-orange-600 p-3 text-white">
-                    Contacts
+                <div className={`rounded-3xl p-3 text-white ${selectedSection === "certifications"
+                        ? "bg-orange-600"
+                        : "bg-teal-600 hover:bg-orange-500"
+                    }`}
+                    onClick={() => handleNavigation("certifications")}
+                >
+                    certifications
                 </div>
             </div>
 
-            <div className="space-y-4">
-                {projectsData.map((project) => (
-                    <Project project={project} />
-                ))}
+            <div className="space-y-4 p-6">
+                {selectedSection == "projects" &&
+                    <>
+                        {projectsData.map((project) => (
+                            <Project project={project} />
+                        ))}
+                    </>
+                }
+
+
+                {selectedSection == "experiences" &&
+                    <>
+                        <div>Experience</div>
+                    </>
+                }
+
+                {selectedSection == "articles" &&
+                    <>
+                        <div>articles</div>
+                    </>
+                }
+
+                {selectedSection == "certifications" &&
+                    <>
+                        <div>certifications</div>
+                    </>
+                }
             </div>
-
-
 
         </div>
     );
