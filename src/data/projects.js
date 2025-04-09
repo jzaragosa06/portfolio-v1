@@ -1,33 +1,26 @@
 const projectsData = [
     {
-        title: "Automated Time Series",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: 'https://images.ctfassets.net/hrltx12pl8hq/54UFl7iiibDdhVZwDHKxID/59f5656b5ed34e25ba3e14aa7979f004/0_hero.webp?fit=fill&w=600&h=400',
-        tags: ['time series', 'forecasting', 'laravel']
+        id: "1", 
+        title: "Brainstorm AI",
+        description: "A web application developed using Node.js.",
+        image: 'image1https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png.png',
+        tags: ['time series', 'forecasting', 'laravel'],
+        fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
+        deployment: "N/A",
+        screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
+        repository: "https://github.com/jzaragosa06/brainstorm-ai", 
     },
     {
-        title: "Automated Time Series",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: 'https://images.ctfassets.net/hrltx12pl8hq/54UFl7iiibDdhVZwDHKxID/59f5656b5ed34e25ba3e14aa7979f004/0_hero.webp?fit=fill&w=600&h=400',
-        tags: ['time series', 'forecasting', 'laravel']
+        id: "2", 
+        title: "Brainstorm AI",
+        description: "A web application developed using Node.js.",
+        image: 'image1https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png.png',
+        tags: ['time series', 'forecasting', 'laravel'],
+        fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
+        deployment: "N/A",
+        screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
+        repository: "https://github.com/jzaragosa06/brainstorm-ai", 
     },
-
-    {
-        title: "Automated Time Series",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: 'https://images.ctfassets.net/hrltx12pl8hq/54UFl7iiibDdhVZwDHKxID/59f5656b5ed34e25ba3e14aa7979f004/0_hero.webp?fit=fill&w=600&h=400',
-        tags: ['time series', 'forecasting', 'laravel']
-    },
-
-    {
-        title: "Automated Time Series",
-        description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-        image: 'https://images.ctfassets.net/hrltx12pl8hq/54UFl7iiibDdhVZwDHKxID/59f5656b5ed34e25ba3e14aa7979f004/0_hero.webp?fit=fill&w=600&h=400',
-        tags: ['time series', 'forecasting', 'laravel']
-    },
-
-
-
 ];
 
 

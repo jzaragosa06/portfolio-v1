@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import UserInfo from "./components/UserInfo";
 import projectsData from "./data/projects";
 import Project from "./components/Project";
+import ProjectDetail from "./components/details/ProjectDetails";
 
 const App = () => {
     const [selectedSection, setselectedSection] = useState("projects");
@@ -53,6 +54,7 @@ const App = () => {
                 </div>
             </div>
 
+            {/* List */}
             <div className="space-y-4 p-6">
                 {selectedSection == "projects" &&
                     <>
@@ -62,13 +64,39 @@ const App = () => {
                     </>
                 }
 
+                {selectedSection == "experiences" &&
+                    <>
+                        <div>Experience</div>
+                    </>
+                }
+                {selectedSection == "articles" &&
+                    <>
+                        <div>articles</div>
+                    </>
+                }
+
+                {selectedSection == "certifications" &&
+                    <>
+                        <div>certifications</div>
+                    </>
+                }
+            </div>
+
+            {/* Details */}
+            <div className="space-y-4 p-6">
+                {selectedSection == "projects" &&
+                    <>
+                        {projectsData.map((project) => (
+                            <ProjectDetail project={project} />
+                        ))}
+                    </>
+                }
 
                 {selectedSection == "experiences" &&
                     <>
                         <div>Experience</div>
                     </>
                 }
-
                 {selectedSection == "articles" &&
                     <>
                         <div>articles</div>
