@@ -6,9 +6,16 @@ import ProjectDetail from "./components/details/ProjectDetails";
 
 const App = () => {
     const [selectedSection, setselectedSection] = useState("projects");
+    const [selectedItemId, setSelectedItemId] = useState(projectsData[0].id);
+
+
 
     const handleNavigation = (section) => {
         setselectedSection(section);
+    }
+
+    const handleItemSelected = (itemId) => {
+        setSelectedItemId(itemId);
     }
 
     return (
@@ -20,8 +27,8 @@ const App = () => {
             {/* navigations */}
             <div className="flex flex-col justify-center items-center gap-3 p-6">
                 <div className={`rounded-3xl p-3 text-white ${selectedSection === "projects"
-                        ? "bg-orange-600"
-                        : "bg-teal-600 hover:bg-orange-500"
+                    ? "bg-orange-600"
+                    : "bg-teal-600 hover:bg-orange-500"
                     }`}
                     onClick={() => handleNavigation("projects")}
 
@@ -29,24 +36,24 @@ const App = () => {
                     Projects
                 </div>
                 <div className={`rounded-3xl p-3 text-white ${selectedSection === "experinces"
-                        ? "bg-orange-600"
-                        : "bg-teal-600 hover:bg-orange-500"
+                    ? "bg-orange-600"
+                    : "bg-teal-600 hover:bg-orange-500"
                     }`}
                     onClick={() => handleNavigation("experiences")}
                 >
                     Experience
                 </div>
                 <div className={`rounded-3xl p-3 text-white ${selectedSection === "articles"
-                        ? "bg-orange-600"
-                        : "bg-teal-600 hover:bg-orange-500"
+                    ? "bg-orange-600"
+                    : "bg-teal-600 hover:bg-orange-500"
                     }`}
                     onClick={() => handleNavigation("articles")}
                 >
                     Articles
                 </div>
                 <div className={`rounded-3xl p-3 text-white ${selectedSection === "certifications"
-                        ? "bg-orange-600"
-                        : "bg-teal-600 hover:bg-orange-500"
+                    ? "bg-orange-600"
+                    : "bg-teal-600 hover:bg-orange-500"
                     }`}
                     onClick={() => handleNavigation("certifications")}
                 >
@@ -55,58 +62,47 @@ const App = () => {
             </div>
 
             {/* List */}
-            <div className="space-y-4 p-6">
+            <div className="p-6">
                 {selectedSection == "projects" &&
-                    <>
+                    <div>
                         {projectsData.map((project) => (
-                            <Project project={project} />
+                            <div 
+                                key={project.id} 
+                                id={project.id} 
+                                onClick={() => handleItemSelected(project.id)}
+                                className="mb-3"
+                            >
+                                <Project project={project} />
+                            </div>
                         ))}
-                    </>
+                    </div>
                 }
 
                 {selectedSection == "experiences" &&
-                    <>
-                        <div>Experience</div>
-                    </>
+                    <div>Experience</div>
                 }
                 {selectedSection == "articles" &&
-                    <>
-                        <div>articles</div>
-                    </>
+                    <div>articles</div>
                 }
 
                 {selectedSection == "certifications" &&
-                    <>
-                        <div>certifications</div>
-                    </>
+                    <div>certifications</div>
                 }
             </div>
 
             {/* Details */}
             <div className="space-y-4 p-6">
                 {selectedSection == "projects" &&
-                    <>
-                        {projectsData.map((project) => (
-                            <ProjectDetail project={project} />
-                        ))}
-                    </>
+                    <ProjectDetail project={projectsData.find(p => p.id == selectedItemId)} />
                 }
-
                 {selectedSection == "experiences" &&
-                    <>
-                        <div>Experience</div>
-                    </>
+                    <div>Experience</div>
                 }
                 {selectedSection == "articles" &&
-                    <>
-                        <div>articles</div>
-                    </>
+                    <div>articles</div>
                 }
-
                 {selectedSection == "certifications" &&
-                    <>
-                        <div>certifications</div>
-                    </>
+                    <div>certifications</div>
                 }
             </div>
 
