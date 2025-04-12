@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaGoogle, FaPhone } from "react-icons
 function UserInfo()
 {
     return (
-        <div className=" bg-white shadow-md rounded-md p-6 flex flex-col">
+        <div className=" bg-white shadow-md rounded-2xl p-6 flex flex-col">
             <div className="p-6">
                 <div className="flex justify-center">
                     <div className="h-24 w-24 rounded-full bg-teal-200 flex items-center justify-center text-teal-600 text-2xl font-bold">

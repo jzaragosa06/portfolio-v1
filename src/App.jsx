@@ -25,9 +25,9 @@ const App = () =>
             <ArcherContainer strokeColor="orange" strokeWidth={2}>
                 {/* Initial View: UserInfo + Navigation */}
                 {!selectedSection ? (
-                    <div className="flex gap-10 items-center">
+                    <div className="flex gap-10 justify-center items-center">
                         {/* User Info */}
-                        <div className="p-6 bg-white rounded-2xl shadow-md">
+                        <div className="p-6 w-1/2">
                             <UserInfo />
                         </div>
 
@@ -50,8 +50,12 @@ const App = () =>
                         </div>
                     </div>
                 ) : (
-                    // After Navigation Clicked: Show List + Detail
                     <div className="flex gap-10 items-start">
+                        {/* User Info */}
+                        {/* <div className="w-1/4">
+                            <UserInfo />
+                        </div> */}
+
                         {/* Navigation */}
                         <div className="flex flex-col gap-4 p-4 bg-white rounded-2xl shadow-md">
                             {["projects", "experiences", "articles", "certifications"].map((section) => (
@@ -84,7 +88,7 @@ const App = () =>
                         </div>
 
                         {/* List */}
-                        <div className="p-4 space-y-3 bg-white rounded-2xl shadow-md max-h-[80vh] overflow-y-auto">
+                        <div className="space-y-3 max-h-[80vh] overflow-y-auto">
                             {selectedSection === "projects" &&
                                 projectsData.map((project) => (
                                     <ArcherElement
@@ -123,7 +127,7 @@ const App = () =>
                         </div>
 
                         {/* Details */}
-                        <div className="p-4 bg-white rounded-2xl shadow-md w-[30rem] max-h-[80vh] overflow-y-auto">
+                        <div className="w-[30rem] max-h-[80vh] overflow-y-auto">
                             <ArcherElement id="details">
                                 <div className="space-y-4">
                                     {selectedSection === "projects" && (
