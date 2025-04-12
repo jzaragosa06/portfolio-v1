@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import user from '../data/user';
 import Animated from '../components/Animated';
 
+
 const Header = () => (
     <div className="flex justify-between items-center p-4 text-gray-700 text-sm">
         <div className="flex items-center space-x-2">
@@ -43,6 +44,17 @@ const InfoSection = () => (
                 <p className="mt-4 max-w-md text-sm text-gray-600">
                     {user.about}
                 </p>
+
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-8">
+                    {user.skills.map((skill, index) => (
+                        <div
+                            key={index}
+                            className="text-xs flex justify-center items-center p-0.5 border font-medium border-gray-700 text-gray-600 text-center rounded-lg hover:bg-black hover:text-white transition duration-300"
+                        >
+                            {skill}
+                        </div>
+                    ))}
+                </div>
             </div>
             {/* Animated container */}
             <div className="w-1/2">
