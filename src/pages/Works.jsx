@@ -76,9 +76,9 @@ const Works = () =>
                                 >
                                     <div
                                         onClick={() => handleItemSelected(project.id)}
-                                        className="cursor-pointer"
+                                        className="cursor-pointer bg-white rounded-2xl border border-black px-2 py-0.5"
                                     >
-                                        <Project project={project} />
+                                        <p className='text-sm font-semibold mb-2' >{project.title}</p>
                                     </div>
                                 </ArcherElement>
                             ))}
