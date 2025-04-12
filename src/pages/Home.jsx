@@ -22,7 +22,7 @@ const Header = () => (
 );
 
 const SocialIcons = () => (
-    <div className="flex flex-col space-y-4 mt-4">
+    <div className="flex flex-col space-y-4">
         <a href={user.linkedin}><FaLinkedin className="text-xl hover:text-blue-500" /></a>
         <a href={user.github}><FaGithub className="text-xl hover:text-gray-800" /></a>
         <a href={user.twitter}><FaTwitter className="text-xl hover:text-blue-400" /></a>

@@ -22,10 +22,10 @@ const Works = () =>
 
     return (
         <div className="min-h-screen bg-gray-100 flex justify-center items-center p-10">
-            <ArcherContainer strokeColor="orange" strokeWidth={2}>
+            <ArcherContainer strokeColor="black" strokeWidth={2}>
                 <div className="flex gap-10 items-start">
                     {/* Navigation */}
-                    <div className="flex flex-col gap-4 p-4 bg-white rounded-2xl shadow-md">
+                    <div className="flex flex-col gap-4">
                         {["projects", "experiences", "articles", "certifications"].map((section) => (
                             <ArcherElement
                                 key={section}
@@ -43,9 +43,9 @@ const Works = () =>
                                 }
                             >
                                 <div
-                                    className={`rounded-3xl px-4 py-2 text-white cursor-pointer text-center ${selectedSection === section
-                                        ? "bg-orange-600"
-                                        : "bg-teal-600 hover:bg-orange-500"
+                                    className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium ${selectedSection === section
+                                        ? "bg-black text-white"
+                                        : "border border-black text-black hover:bg-black hover:text-white"
                                         }`}
                                     onClick={() => handleNavigation(section)}
                                 >
