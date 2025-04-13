@@ -2,6 +2,7 @@ const projectsData = [
     {
         id: "1",
         title: "Brainstorm AI",
+        subtitle: "sub",
         description: "A web application developed using Node.js.",
         image: 'image1https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png.png',
         tags: ['time series', 'forecasting', 'laravel'],
@@ -14,6 +15,7 @@ const projectsData = [
     {
         id: "2",
         title: "Brainstorm AI 2",
+        subtitle: "sub",
         description: "A web application developed using Node.js.",
         image: 'image1https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png.png',
         tags: ['time series', 'forecasting', 'laravel'],
