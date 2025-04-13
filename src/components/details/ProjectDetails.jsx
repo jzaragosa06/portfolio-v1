@@ -1,54 +1,71 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
 function ProjectDetail({ project })
 {
     return (
-        <div className="flex gap-8">
-            {/* Left Content */}
-            <div className="flex-1">
-                <h1 className="text-2xl font-bold">{project.title}</h1>
-                <p className="text-gray-500 mb-6">{project.subtitle}</p>
+        <div className="max-w-6xl mx-auto p-6 md:p-8">
+            {/* Main Content Row */}
+            <div className='flex flex-col md:flex-row gap-8'>
+                {/* Left Content - Project Info */}
+                <div className='md:w-3/4'>
+                    <h1 className="text-3xl font-bold text-gray-800 mb-2">{project.title}</h1>
+                    <p className="text-gray-600 text-lg mb-6">{project.subtitle}</p>
 
-                <div className="space-y-4 mb-6">
-                    {project.fullDescription}
-                </div>
+                    <div className="prose text-gray-700 mb-8 space-y-4">
+                        {project.fullDescription}
+                    </div>
 
-                <div className="flex justify-center items-center gap-4 cursor-pointer">
-                    <a href={project.repository} target="_blank" rel="noopener noreferrer">
-                        <FaGithub />
-                    </a>
-                    <a href={project.deployment} target="_blank" rel="noopener noreferrer">
-                        <FaLink />
-                    </a>
-                </div>
-                <hr className="border-gray-300 my-4" />
-
-                {/* Skills */}
-                <div className="flex flex-wrap gap-4 mt-4">
-                    {project.skills.map((skill, idx) => (
-                        <button
-                            key={idx}
-                            className="px-4 py-2 border border-black rounded-full text-sm hover:bg-gray-100 transition"
+                    <div className="flex gap-4 mb-8">
+                        <a
+                            href={project.repository}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
                         >
-                            {skill}
-                        </button>
-                    ))}
+                            <FaGithub className="text-xl" />
+                            <span>View Code</span>
+                        </a>
+                        {project.deployment && (
+                            <a
+                                href={project.deployment}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
+                            >
+                                <FaLink className="text-xl" />
+                                <span>Live Demo</span>
+                            </a>
+                        )}
+                    </div>
+                </div>
+
+                {/* Right Content - Skills */}
+                <div className="md:w-1/4">
+                    <h3 className="text-lg font-semibold text-gray-800">Technologies Used</h3>
+                    <div className="flex flex-wrap gap-2">
+                        {project.skills.map((skill, idx) => (
+                            <span
+                                key={idx}
+                                className="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+                            >
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </div>
 
-            {/* <div className="w-[400px] h-[500px]">
-                <div
-
-                    className="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 text-sm"
-                >
-                    <img src={project.image} alt="" className='w-full h-full' />
-                </div>
-            </div> */}
+            {/* Project Image */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-2xl mx-auto">
+                <img
+                    src={project.image}
+                    alt={`Screenshot of ${project.title}`}
+                    className="w-full h-auto object-contain max-h-[400px] mx-auto"
+                />
+            </div>
         </div>
     );
 }
 
 export default ProjectDetail;
-
-

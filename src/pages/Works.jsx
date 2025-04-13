@@ -31,8 +31,8 @@ const Works = () =>
                         <button
                             key={section}
                             className={`rounded-full px-5 py-2 md:px-6 md:py-2.5 cursor-pointer text-sm md:text-base font-medium whitespace-nowrap transition-all duration-200 ${selectedSection === section
-                                ? "bg-black text-white shadow-md"
-                                : "border border-gray-300 text-gray-700 hover:bg-gray-100 hover:border-gray-400"
+                                ? "bg-black text-white"
+                                : "border border-black text-black hover:bg-black hover:text-white"
                                 }`}
                             onClick={() => handleNavigation(section)}
                         >
@@ -53,7 +53,7 @@ const Works = () =>
                                             onClick={() => handleItemSelected(project.id)}
                                             className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === project.id
                                                 ? "bg-black text-white border-black"
-                                                : "border-gray-300 text-gray-700 hover:bg-gray-100 hover:border-gray-400"
+                                                : "border border-black text-black hover:bg-black hover:text-white"
                                                 }`}
                                         >
                                             {project.title}
@@ -76,7 +76,7 @@ const Works = () =>
 
                     {/* Details */}
                     <div className="w-full lg:w-3/4  border-l-2 border-l-black overflow-hidden">
-                        <div className="p-4 md:p-6 max-h-[50vh] overflow-y-auto">
+                        <div className="p-4 md:p-6 max-h-[80vh]">
                             {selectedSection === "projects" && (
                                 <ProjectDetail
                                     project={projectsData.find(
