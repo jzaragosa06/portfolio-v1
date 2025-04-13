@@ -11,6 +11,11 @@ const Works = () =>
     const handleNavigation = (section) =>
     {
         setSelectedSection(section);
+        // Reset to first item when changing sections
+        if (section === 'projects')
+        {
+            setSelectedItemId(projectsData[0].id);
+        }
     };
 
     const handleItemSelected = (itemId) =>
@@ -19,12 +24,12 @@ const Works = () =>
     };
 
     return (
-        <div className="h-screen bg-gray-100 flex justify-center items-center p-10">
+        <div className="min-h-screen flex justify-center items-center p-4 md:p-8 lg:p-10">
             <div className="w-full max-w-6xl">
                 <ArcherContainer strokeColor="black" strokeWidth={2}>
-                    <div className="flex gap-10 items-start">
+                    <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 items-start">
                         {/* Navigation */}
-                        <div className="flex flex-col gap-4">
+                        <div className="flex lg:flex-col gap-3 w-full lg:w-auto overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0">
                             {["projects", "experiences", "articles", "certifications"].map((section) => (
                                 <ArcherElement
                                     key={section}
@@ -42,7 +47,7 @@ const Works = () =>
                                     }
                                 >
                                     <div
-                                        className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium ${selectedSection === section
+                                        className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium whitespace-nowrap transition-colors duration-200 ${selectedSection === section
                                             ? "bg-black text-white"
                                             : "border border-black text-black hover:bg-black hover:text-white"
                                             }`}
@@ -55,7 +60,7 @@ const Works = () =>
                         </div>
 
                         {/* List */}
-                        <div className="space-y-3 p-3 overflow-y-auto">
+                        <div className="w-full lg:w-1/4 space-y-2 md:space-y-3 max-h-[20vh] overflow-y-auto pr-2">
                             {selectedSection === "projects" &&
                                 projectsData.map((project) => (
                                     <ArcherElement
@@ -75,27 +80,30 @@ const Works = () =>
                                     >
                                         <div
                                             onClick={() => handleItemSelected(project.id)}
-                                            className="cursor-pointer bg-white rounded-2xl border border-black px-3 py-0.5"
+                                            className={`rounded-3xl px-4 py-2 cursor-pointer text-sm md:text-base text-center font-medium border border-black transition-colors duration-200 ${selectedItemId === project.id
+                                                ? "bg-black text-white"
+                                                : "hover:bg-gray-100"
+                                                }`}
                                         >
-                                            <p className='text-sm font-semibold mb-2' >{project.title}</p>
+                                            {project.title}
                                         </div>
                                     </ArcherElement>
                                 ))}
 
                             {selectedSection === "experiences" && (
-                                <div className="text-gray-700">Experience list here</div>
+                                <div className="text-gray-700 p-4">Experience list here</div>
                             )}
                             {selectedSection === "articles" && (
-                                <div className="text-gray-700">Articles list here</div>
+                                <div className="text-gray-700 p-4">Articles list here</div>
                             )}
                             {selectedSection === "certifications" && (
-                                <div className="text-gray-700">Certifications list here</div>
+                                <div className="text-gray-700 p-4">Certifications list here</div>
                             )}
                         </div>
 
                         {/* Details */}
-                        <div className="w-full max-h-[80vh]">
-                            <div className="space-y-4">
+                        <div className="w-full lg:flex-1 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto">
+                            <div className="space-y-4 p-2 md:p-4">
                                 {selectedSection === "projects" && (
                                     <ProjectDetail
                                         project={projectsData.find(
@@ -104,18 +112,17 @@ const Works = () =>
                                     />
                                 )}
                                 {selectedSection === "experiences" && (
-                                    <div className="text-gray-800">Experience details here</div>
+                                    <div className="text-gray-800 p-4">Experience details here</div>
                                 )}
                                 {selectedSection === "articles" && (
-                                    <div className="text-gray-800">Articles details here</div>
+                                    <div className="text-gray-800 p-4">Articles details here</div>
                                 )}
                                 {selectedSection === "certifications" && (
-                                    <div className="text-gray-800">Certifications details here</div>
+                                    <div className="text-gray-800 p-4">Certifications details here</div>
                                 )}
                             </div>
                         </div>
                     </div>
-
                 </ArcherContainer>
             </div>
         </div>
