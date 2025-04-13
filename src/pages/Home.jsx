@@ -5,7 +5,7 @@ import { FiSettings } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import user from '../data/user';
 import Animated from '../components/Animated';
-
+import downloadResume from '../utils/downloadResume';
 
 const Header = () => (
     <div className="flex justify-between items-center p-4 text-gray-700 text-sm">
@@ -15,7 +15,8 @@ const Header = () => (
         </div>
         <div className="flex items-center space-x-6">
             <Link to="/works">Works</Link>
-            <a href="#" className="hover:underline">Resume</a>
+            {/* <a href="#" className="hover:underline">Resume</a> */}
+            <p onClick={downloadResume} className="hover:underline">Resume</p>
             <FiSettings />
         </div>
     </div>
