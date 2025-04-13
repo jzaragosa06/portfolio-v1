@@ -23,57 +23,60 @@ const Works = () =>
     };
 
     return (
-        <div className="min-h-screen flex justify-center items-center p-4 md:p-8 lg:p-10">
-            <div className="w-full max-w-7xl">
-                <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 items-start">
-                    {/* Navigation */}
-                    <div className="flex lg:flex-col gap-3 w-full lg:w-auto overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0">
-                        {["projects", "experiences", "articles", "certifications"].map((section) => (
+        <div className="min-h-screen flex flex-col justify-start items-center p-4 md:p-8 lg:p-12">
+            <div className="w-full max-w-7xl space-y-8 md:space-y-12">
+                {/* Navigation */}
+                <div className="flex flex-row gap-2 md:gap-4 w-full overflow-x-auto pb-3 scrollbar-hide">
+                    {["projects", "experiences", "articles", "certifications"].map((section) => (
+                        <button
+                            key={section}
+                            className={`rounded-full px-5 py-2 md:px-6 md:py-2.5 cursor-pointer text-sm md:text-base font-medium whitespace-nowrap transition-all duration-200 ${selectedSection === section
+                                ? "bg-black text-white shadow-md"
+                                : "border border-gray-300 text-gray-700 hover:bg-gray-100 hover:border-gray-400"
+                                }`}
+                            onClick={() => handleNavigation(section)}
+                        >
+                            {section.charAt(0).toUpperCase() + section.slice(1)}
+                        </button>
+                    ))}
+                </div>
 
-                            <div
-                                className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium whitespace-nowrap transition-colors duration-200 ${selectedSection === section
-                                    ? "bg-black text-white"
-                                    : "border border-black text-black hover:bg-black hover:text-white"
-                                    }`}
-                                onClick={() => handleNavigation(section)}
-                            >
-                                {section.charAt(0).toUpperCase() + section.slice(1)}
-                            </div>
-
-                        ))}
-                    </div>
-
+                <div className="flex flex-col lg:flex-row gap-6 md:gap-8 w-full">
                     {/* List */}
-                    <div className="w-full lg:w-1/5 space-y-2 md:space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-                        {selectedSection === "projects" &&
-                            projectsData.map((project) => (
-
-                                <div
-                                    onClick={() => handleItemSelected(project.id)}
-                                    className={`rounded-3xl px-4 py-2 cursor-pointer text-sm md:text-base text-center font-medium border border-black transition-colors duration-200 ${selectedItemId === project.id
-                                        ? "bg-black text-white"
-                                        : "hover:bg-gray-100"
-                                        }`}
-                                >
-                                    {project.title}
+                    <div className="w-full lg:w-1/4  overflow-hidden">
+                        <div className="p-2 md:p-3 max-h-[50vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                            {selectedSection === "projects" && (
+                                <div className="space-y-2">
+                                    {projectsData.map((project) => (
+                                        <div
+                                            key={project.id}
+                                            onClick={() => handleItemSelected(project.id)}
+                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === project.id
+                                                ? "bg-black text-white border-black"
+                                                : "border-gray-300 text-gray-700 hover:bg-gray-100 hover:border-gray-400"
+                                                }`}
+                                        >
+                                            {project.title}
+                                        </div>
+                                    ))}
                                 </div>
+                            )}
 
-                            ))}
-
-                        {selectedSection === "experiences" && (
-                            <div className="text-gray-700 p-4">Experience list here</div>
-                        )}
-                        {selectedSection === "articles" && (
-                            <div className="text-gray-700 p-4">Articles list here</div>
-                        )}
-                        {selectedSection === "certifications" && (
-                            <div className="text-gray-700 p-4">Certifications list here</div>
-                        )}
+                            {selectedSection === "experiences" && (
+                                <div className="text-gray-500 p-4 text-center">Experience list coming soon</div>
+                            )}
+                            {selectedSection === "articles" && (
+                                <div className="text-gray-500 p-4 text-center">Articles list coming soon</div>
+                            )}
+                            {selectedSection === "certifications" && (
+                                <div className="text-gray-500 p-4 text-center">Certifications list coming soon</div>
+                            )}
+                        </div>
                     </div>
 
                     {/* Details */}
-                    <div className="w-full lg:w-2/3 max-h-[60vh] lg:max-h-[70vh]">
-                        <div className="space-y-4">
+                    <div className="w-full lg:w-3/4  border-l-2 border-l-black overflow-hidden">
+                        <div className="p-4 md:p-6 max-h-[50vh] overflow-y-auto">
                             {selectedSection === "projects" && (
                                 <ProjectDetail
                                     project={projectsData.find(
@@ -82,13 +85,13 @@ const Works = () =>
                                 />
                             )}
                             {selectedSection === "experiences" && (
-                                <div className="text-gray-800 p-4">Experience details here</div>
+                                <div className="text-gray-600 p-4">Experience details coming soon</div>
                             )}
                             {selectedSection === "articles" && (
-                                <div className="text-gray-800 p-4">Articles details here</div>
+                                <div className="text-gray-600 p-4">Articles details coming soon</div>
                             )}
                             {selectedSection === "certifications" && (
-                                <div className="text-gray-800 p-4">Certifications details here</div>
+                                <div className="text-gray-600 p-4">Certifications details coming soon</div>
                             )}
                         </div>
                     </div>
