@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { ArcherContainer, ArcherElement } from "react-archer";
-import UserInfo from "../components/UserInfo";
 import projectsData from "../data/projects";
-import Project from "../components/Project";
 import ProjectDetail from "../components/details/ProjectDetails";
 
 const Works = () =>
@@ -21,52 +19,21 @@ const Works = () =>
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 flex justify-center items-center p-10">
-            <ArcherContainer strokeColor="black" strokeWidth={2}>
-                <div className="flex gap-10 items-start">
-                    {/* Navigation */}
-                    <div className="flex flex-col gap-4">
-                        {["projects", "experiences", "articles", "certifications"].map((section) => (
-                            <ArcherElement
-                                key={section}
-                                id={`nav-${section}`}
-                                relations={
-                                    selectedSection === section && selectedSection === "projects"
-                                        ? [
-                                            {
-                                                targetId: `list-${selectedItemId}`,
-                                                targetAnchor: "left",
-                                                sourceAnchor: "right",
-                                            },
-                                        ]
-                                        : []
-                                }
-                            >
-                                <div
-                                    className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium ${selectedSection === section
-                                        ? "bg-black text-white"
-                                        : "border border-black text-black hover:bg-black hover:text-white"
-                                        }`}
-                                    onClick={() => handleNavigation(section)}
-                                >
-                                    {section.charAt(0).toUpperCase() + section.slice(1)}
-                                </div>
-                            </ArcherElement>
-                        ))}
-                    </div>
-
-                    {/* List */}
-                    <div className="space-y-3 max-h-[80vh] overflow-y-auto">
-                        {selectedSection === "projects" &&
-                            projectsData.map((project) => (
+        <div className="h-screen bg-gray-100 flex justify-center items-center p-10">
+            <div className="w-full max-w-6xl">
+                <ArcherContainer strokeColor="black" strokeWidth={2}>
+                    <div className="flex gap-10 items-start">
+                        {/* Navigation */}
+                        <div className="flex flex-col gap-4">
+                            {["projects", "experiences", "articles", "certifications"].map((section) => (
                                 <ArcherElement
-                                    key={project.id}
-                                    id={`list-${project.id}`}
+                                    key={section}
+                                    id={`nav-${section}`}
                                     relations={
-                                        selectedItemId === project.id
+                                        selectedSection === section && selectedSection === "projects"
                                             ? [
                                                 {
-                                                    targetId: "details",
+                                                    targetId: `list-${selectedItemId}`,
                                                     targetAnchor: "left",
                                                     sourceAnchor: "right",
                                                 },
@@ -75,28 +42,59 @@ const Works = () =>
                                     }
                                 >
                                     <div
-                                        onClick={() => handleItemSelected(project.id)}
-                                        className="cursor-pointer bg-white rounded-2xl border border-black px-2 py-0.5"
+                                        className={`rounded-3xl px-4 py-2 cursor-pointer text-center font-medium ${selectedSection === section
+                                            ? "bg-black text-white"
+                                            : "border border-black text-black hover:bg-black hover:text-white"
+                                            }`}
+                                        onClick={() => handleNavigation(section)}
                                     >
-                                        <p className='text-sm font-semibold mb-2' >{project.title}</p>
+                                        {section.charAt(0).toUpperCase() + section.slice(1)}
                                     </div>
                                 </ArcherElement>
                             ))}
+                        </div>
 
-                        {selectedSection === "experiences" && (
-                            <div className="text-gray-700">Experience list here</div>
-                        )}
-                        {selectedSection === "articles" && (
-                            <div className="text-gray-700">Articles list here</div>
-                        )}
-                        {selectedSection === "certifications" && (
-                            <div className="text-gray-700">Certifications list here</div>
-                        )}
-                    </div>
+                        {/* List */}
+                        <div className="space-y-3 p-3 overflow-y-auto">
+                            {selectedSection === "projects" &&
+                                projectsData.map((project) => (
+                                    <ArcherElement
+                                        key={project.id}
+                                        id={`list-${project.id}`}
+                                        relations={
+                                            selectedItemId === project.id
+                                                ? [
+                                                    {
+                                                        targetId: "details",
+                                                        targetAnchor: "left",
+                                                        sourceAnchor: "right",
+                                                    },
+                                                ]
+                                                : []
+                                        }
+                                    >
+                                        <div
+                                            onClick={() => handleItemSelected(project.id)}
+                                            className="cursor-pointer bg-white rounded-2xl border border-black px-3 py-0.5"
+                                        >
+                                            <p className='text-sm font-semibold mb-2' >{project.title}</p>
+                                        </div>
+                                    </ArcherElement>
+                                ))}
 
-                    {/* Details */}
-                    <div className="w-[30rem] max-h-[80vh] overflow-y-auto">
-                        <ArcherElement id="details">
+                            {selectedSection === "experiences" && (
+                                <div className="text-gray-700">Experience list here</div>
+                            )}
+                            {selectedSection === "articles" && (
+                                <div className="text-gray-700">Articles list here</div>
+                            )}
+                            {selectedSection === "certifications" && (
+                                <div className="text-gray-700">Certifications list here</div>
+                            )}
+                        </div>
+
+                        {/* Details */}
+                        <div className="w-full max-h-[80vh]">
                             <div className="space-y-4">
                                 {selectedSection === "projects" && (
                                     <ProjectDetail
@@ -115,11 +113,11 @@ const Works = () =>
                                     <div className="text-gray-800">Certifications details here</div>
                                 )}
                             </div>
-                        </ArcherElement>
+                        </div>
                     </div>
-                </div>
 
-            </ArcherContainer>
+                </ArcherContainer>
+            </div>
         </div>
     );
 };

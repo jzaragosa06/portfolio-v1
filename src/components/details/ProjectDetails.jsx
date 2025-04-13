@@ -1,29 +1,44 @@
 import React, { useEffect } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
-function ProjectDetail({ project }) {
+function ProjectDetail({ project })
+{
     return (
-        <div className='bg-white shadow-md rounded-md p-6'>
-            <div className='flex p-3'>
+        <div className=" flex gap-8">
+            {/* Left Content */}
+            <div className="flex-1">
+                <h1 className="text-2xl font-bold">{project.title}</h1>
+                <p className="text-gray-500 mb-6">subtitle</p>
 
-                {project.screenshots.map((image) => (
-                    <div><img src={image} /></div>
-                ))}
-            </div>
-            <div className='flex justify-between'>
-                <h2 className='text-lg font-semibold text-gray-600 mb-2' >{project.title}</h2>
-                <div className='flex'>
-                    <FaGithub className='text-teal-600 mr-2' />
-                    <FaLink className='text-teal-600 mr-2' />
+                <div className="space-y-4 mb-6">
+                    {project.fullDescription}
+                </div>
+
+                <hr className="border-gray-300 my-4" />
+
+                {/* Skills */}
+                <div className="flex flex-wrap gap-4 mt-4">
+                    {project.skills.map((skill, idx) => (
+                        <button
+                            key={idx}
+                            className="px-4 py-2 border border-black rounded-full text-sm hover:bg-gray-100 transition"
+                        >
+                            {skill}
+                        </button>
+                    ))}
                 </div>
             </div>
-            <p className='text-sm text-gray-600 mb-2'>{project.fullDescription}</p>
 
-            <div className='flex gap-2'>
-                {project.tags.map((tag, index) => (
-                    <span
-                        key={index}
-                        className='text-xs text-teal-600 border border-teal-600 rounded-2xl p-1'>{tag}</span>
+            {/* Right Content - Scrollable Images */}
+            <div className="w-[300px] h-[500px] overflow-y-scroll space-y-4">
+                {/* Example images */}
+                {project.screenshots.map((img, idx) => (
+                    <div
+                        key={idx}
+                        className="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 text-sm"
+                    >
+                        image
+                    </div>
                 ))}
             </div>
         </div>
@@ -31,3 +46,5 @@ function ProjectDetail({ project }) {
 }
 
 export default ProjectDetail;
+
+
