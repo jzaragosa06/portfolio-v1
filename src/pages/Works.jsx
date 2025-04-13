@@ -59,8 +59,8 @@ const Works = () =>
                             ))}
                         </div>
 
-                        {/* List */}
-                        <div className="w-full lg:w-1/4 space-y-2 md:space-y-3 max-h-[20vh] overflow-y-auto pr-2">
+                        {/* List - Made narrower */}
+                        <div className="w-full lg:w-1/5 space-y-2 md:space-y-3 max-h-[60vh] overflow-y-auto pr-2">
                             {selectedSection === "projects" &&
                                 projectsData.map((project) => (
                                     <ArcherElement
@@ -101,8 +101,8 @@ const Works = () =>
                             )}
                         </div>
 
-                        {/* Details */}
-                        <div className="w-full lg:flex-1 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto">
+                        {/* Details - Made wider */}
+                        <div className="w-full lg:w-2/3 max-h-[60vh] lg:max-h-[70vh]">
                             <div className="space-y-4 p-2 md:p-4">
                                 {selectedSection === "projects" && (
                                     <ProjectDetail

@@ -30,16 +30,13 @@ function ProjectDetail({ project })
             </div>
 
             {/* Right Content - Scrollable Images */}
-            <div className="w-[300px] h-[500px] overflow-y-scroll space-y-4">
-                {/* Example images */}
-                {project.screenshots.map((img, idx) => (
-                    <div
-                        key={idx}
-                        className="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 text-sm"
-                    >
-                        image
-                    </div>
-                ))}
+            <div className="w-[300px] h-[500px]">
+                <div
+
+                    className="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 text-sm"
+                >
+                    <img src={project.image} alt="" className='w-full h-full object-cover' />
+                </div>
             </div>
         </div>
     );
