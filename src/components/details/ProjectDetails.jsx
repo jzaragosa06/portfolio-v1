@@ -4,11 +4,11 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 function ProjectDetail({ project })
 {
     return (
-        <div className=" flex gap-8">
+        <div className="flex gap-8">
             {/* Left Content */}
             <div className="flex-1">
                 <h1 className="text-2xl font-bold">{project.title}</h1>
-                <p className="text-gray-500 mb-6">subtitle</p>
+                <p className="text-gray-500 mb-6">{project.subtitle}</p>
 
                 <div className="space-y-4 mb-6">
                     {project.fullDescription}
