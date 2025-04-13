@@ -1,4 +1,3 @@
-import { a } from 'framer-motion/client';
 import React, { useEffect } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
@@ -38,7 +37,6 @@ function ProjectDetail({ project })
                 </div>
             </div>
 
-            {/* Right Content - Scrollable Images */}
             {/* <div className="w-[400px] h-[500px]">
                 <div
 
