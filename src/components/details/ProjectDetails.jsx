@@ -1,3 +1,4 @@
+import { a } from 'framer-motion/client';
 import React, { useEffect } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 
@@ -14,6 +15,14 @@ function ProjectDetail({ project })
                     {project.fullDescription}
                 </div>
 
+                <div className="flex justify-center items-center gap-4 cursor-pointer">
+                    <a href={project.repository} target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                    </a>
+                    <a href={project.deployment} target="_blank" rel="noopener noreferrer">
+                        <FaLink />
+                    </a>
+                </div>
                 <hr className="border-gray-300 my-4" />
 
                 {/* Skills */}
@@ -30,12 +39,12 @@ function ProjectDetail({ project })
             </div>
 
             {/* Right Content - Scrollable Images */}
-            <div className="w-[300px] h-[500px]">
+            <div className="w-[400px] h-[500px]">
                 <div
 
                     className="w-full h-48 bg-gray-300 flex items-center justify-center text-gray-600 text-sm"
                 >
-                    <img src={project.image} alt="" className='w-full h-full object-cover' />
+                    <img src={project.image} alt="" className='w-full h-full' />
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ const Works = () =>
 
     return (
         <div className="min-h-screen flex justify-center items-center p-4 md:p-8 lg:p-10">
-            <div className="w-full max-w-6xl">
+            <div className="w-full max-w-7xl">
                 <ArcherContainer strokeColor="black" strokeWidth={2}>
                     <div className="flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 items-start">
                         {/* Navigation */}
@@ -59,7 +59,7 @@ const Works = () =>
                             ))}
                         </div>
 
-                        {/* List - Made narrower */}
+                        {/* List */}
                         <div className="w-full lg:w-1/5 space-y-2 md:space-y-3 max-h-[60vh] overflow-y-auto pr-2">
                             {selectedSection === "projects" &&
                                 projectsData.map((project) => (
@@ -101,9 +101,9 @@ const Works = () =>
                             )}
                         </div>
 
-                        {/* Details - Made wider */}
+                        {/* Details */}
                         <div className="w-full lg:w-2/3 max-h-[60vh] lg:max-h-[70vh]">
-                            <div className="space-y-4 p-2 md:p-4">
+                            <div className="space-y-4">
                                 {selectedSection === "projects" && (
                                     <ProjectDetail
                                         project={projectsData.find(
