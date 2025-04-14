@@ -87,7 +87,7 @@ function ProjectDetail({ project }) {
                     ></div>
                     
                     {/* Modal content */}
-                    <div className="relative z-50 bg-white rounded-lg shadow-xl max-w-6xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row">
+                    <div className="relative z-50 bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row">
                         {/* Close button */}
                         <button
                             onClick={closeModal}
@@ -97,7 +97,7 @@ function ProjectDetail({ project }) {
                         </button>
                         
                         {/* Image on the left */}
-                        <div className="md:w-1/2 p-4 flex items-center justify-center bg-gray-100">
+                        <div className="md:w-2/3 p-2 flex items-center justify-center bg-gray-100">
                             <img
                                 src={project.image}
                                 alt={`Screenshot of ${project.title}`}
@@ -106,7 +106,7 @@ function ProjectDetail({ project }) {
                         </div>
                         
                         {/* Description on the right */}
-                        <div className="md:w-1/2 p-6 overflow-y-auto">
+                        <div className="md:w-1/3 p-6 overflow-y-auto">
                             <h2 className="text-2xl font-bold text-gray-800 mb-4">{project.title}</h2>
                             <div className="prose text-gray-700">
                                 {project.fullDescription}
