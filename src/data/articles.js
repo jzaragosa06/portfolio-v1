@@ -8,10 +8,10 @@ const articles = [
         image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
         tags: ['time series', 'forecasting', 'laravel'],
         fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
-        deployment: "",
+        deployment: "da",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "",
-        source: "", 
+        source: "adf", 
     },
     {
         id: "2",
@@ -21,10 +21,10 @@ const articles = [
         image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
         tags: ['time series', 'forecasting', 'laravel'],
         fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
-        deployment: "",
+        deployment: "adfa",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "",
-        source: "", 
+        source: "sdfad", 
     },
 ];
 

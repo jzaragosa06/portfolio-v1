@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub, FaLink, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLink, FaMedium, FaTimes } from 'react-icons/fa';
 
 function ArticleDetail({ article }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,6 +39,17 @@ function ArticleDetail({ article }) {
                             >
                                 <FaLink className="text-xl" />
                                 <span>Live Demo</span>
+                            </a>
+                        )}
+                        {article.source && (
+                            <a
+                                href={article.source}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
+                            >
+                                <FaMedium className="text-xl" />
+                                <span>Read Article</span>
                             </a>
                         )}
                     </div>
