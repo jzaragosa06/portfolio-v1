@@ -1,29 +1,29 @@
-const projectsData = [
+
+const certificates = [
     {
         id: "1",
-        title: "Brainstorm AI",
+        title: "CERT 1",
         subtitle: "sub",
         description: "A web application developed using Node.js.",
         image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
         tags: ['time series', 'forecasting', 'laravel'],
         fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
-        deployment: "N/A",
+        deployment: "",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
-        repository: "https://github.com/jzaragosa06/brainstorm-ai",
+        repository: "",
     },
     {
         id: "2",
-        title: "Brainstorm AI 2",
+        title: "CERT 2",
         subtitle: "sub",
         description: "A web application developed using Node.js.",
         image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
         tags: ['time series', 'forecasting', 'laravel'],
         fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
-        deployment: "N/A",
+        deployment: "",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
-        repository: "https://github.com/jzaragosa06/brainstorm-ai",
+        repository: "",
     },
 ];
 
-
-export default projectsData;
+export default certificates;
