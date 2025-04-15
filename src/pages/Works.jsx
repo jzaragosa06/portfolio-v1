@@ -1,25 +1,26 @@
 import React, { useState } from "react";
-import projectsData from "../data/projects";
+import projects from "../data/projects";
 import ProjectDetail from "../components/details/ProjectDetails";
-import certificateData from "../data/certifications";
+import certificates from "../data/certifications";
 import CertificateDetail from "../components/details/CertificationDetails";
-const Works = () =>
-{
-    const [selectedSection, setSelectedSection] = useState('projects');
-    const [selectedItemId, setSelectedItemId] = useState(projectsData[0].id);
+import articles from "../data/articles";
+import ArticleDetail from "../components/details/ArticlesDetails";
+import experiences from "../data/experiences";
+import ExperienceDetail from "../components/details/ExperiencesDetails";
 
-    const handleNavigation = (section) =>
-    {
+const Works = () => {
+    const [selectedSection, setSelectedSection] = useState('projects');
+    const [selectedItemId, setSelectedItemId] = useState(projects[0].id);
+
+    const handleNavigation = (section) => {
         setSelectedSection(section);
         // Reset to first item when changing sections
-        if (section === 'projects')
-        {
-            setSelectedItemId(projectsData[0].id);
+        if (section === 'projects') {
+            setSelectedItemId(projects[0].id);
         }
     };
 
-    const handleItemSelected = (itemId) =>
-    {
+    const handleItemSelected = (itemId) => {
         setSelectedItemId(itemId);
     };
 
@@ -48,7 +49,7 @@ const Works = () =>
                         <div className="p-2 md:p-3 max-h-[50vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                             {selectedSection === "projects" && (
                                 <div className="space-y-2">
-                                    {projectsData.map((project) => (
+                                    {projects.map((project) => (
                                         <div
                                             key={project.id}
                                             onClick={() => handleItemSelected(project.id)}
@@ -64,14 +65,40 @@ const Works = () =>
                             )}
 
                             {selectedSection === "experiences" && (
-                                <div className="text-gray-500 p-4 text-center">Experience list coming soon</div>
+                                <div className="space-y-2">
+                                    {experiences.map((experience) => (
+                                        <div
+                                            key={experience.id}
+                                            onClick={() => handleItemSelected(experience.id)}
+                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === experience.id
+                                                ? "bg-black text-white border-black"
+                                                : "border border-black text-black hover:bg-black hover:text-white"
+                                                }`}
+                                        >
+                                            {experience.title}
+                                        </div>
+                                    ))}
+                                </div>
                             )}
                             {selectedSection === "articles" && (
-                                <div className="text-gray-500 p-4 text-center">Articles list coming soon</div>
-                            )}
-                             {selectedSection === "certifications" && (
                                 <div className="space-y-2">
-                                    {certificateData.map((certificate) => (
+                                    {articles.map((article) => (
+                                        <div
+                                            key={article.id}
+                                            onClick={() => handleItemSelected(article.id)}
+                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === article.id
+                                                ? "bg-black text-white border-black"
+                                                : "border border-black text-black hover:bg-black hover:text-white"
+                                                }`}
+                                        >
+                                            {article.title}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                            {selectedSection === "certifications" && (
+                                <div className="space-y-2">
+                                    {certificates.map((certificate) => (
                                         <div
                                             key={certificate.id}
                                             onClick={() => handleItemSelected(certificate.id)}
@@ -93,19 +120,31 @@ const Works = () =>
                         <div className="p-4 md:p-6 max-h-[80vh]">
                             {selectedSection === "projects" && (
                                 <ProjectDetail
-                                    project={projectsData.find(
+                                    project={projects.find(
                                         (p) => p.id === selectedItemId
                                     )}
                                 />
                             )}
                             {selectedSection === "experiences" && (
-                                <div className="text-gray-600 p-4">Experience details coming soon</div>
+                                <ExperienceDetail
+                                    experience={experiences.find(
+                                        (e) => e.id === selectedItemId
+                                    )}
+                                />
                             )}
                             {selectedSection === "articles" && (
-                                <div className="text-gray-600 p-4">Articles details coming soon</div>
+                                <ArticleDetail
+                                    article={articles.find(
+                                        (a) => a.id === selectedItemId
+                                    )}
+                                />
                             )}
                             {selectedSection === "certifications" && (
-                                <div className="text-gray-600 p-4">Certifications details coming soon</div>
+                                <CertificateDetail
+                                    certificate={certificates.find(
+                                        (c) => c.id === selectedItemId
+                                    )}
+                                />
                             )}
                         </div>
                     </div>
