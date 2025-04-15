@@ -10,6 +10,7 @@ const projectsData = [
         deployment: "N/A",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "https://github.com/jzaragosa06/brainstorm-ai",
+        source: "", 
     },
     {
         id: "2",
@@ -22,6 +23,7 @@ const projectsData = [
         deployment: "N/A",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "https://github.com/jzaragosa06/brainstorm-ai",
+        source: "", 
     },
 ];
 

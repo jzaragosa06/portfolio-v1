@@ -11,6 +11,7 @@ const certificates = [
         deployment: "",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "",
+        source: "", 
     },
     {
         id: "2",
@@ -23,6 +24,7 @@ const certificates = [
         deployment: "",
         screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
         repository: "",
+        source: "", 
     },
 ];
 

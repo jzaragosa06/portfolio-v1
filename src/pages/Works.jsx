@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import projectsData from "../data/projects";
 import ProjectDetail from "../components/details/ProjectDetails";
-
+import certificateData from "../data/certifications";
+import CertificateDetail from "../components/details/CertificationDetails";
 const Works = () =>
 {
     const [selectedSection, setSelectedSection] = useState('projects');
@@ -68,8 +69,21 @@ const Works = () =>
                             {selectedSection === "articles" && (
                                 <div className="text-gray-500 p-4 text-center">Articles list coming soon</div>
                             )}
-                            {selectedSection === "certifications" && (
-                                <div className="text-gray-500 p-4 text-center">Certifications list coming soon</div>
+                             {selectedSection === "certifications" && (
+                                <div className="space-y-2">
+                                    {certificateData.map((certificate) => (
+                                        <div
+                                            key={certificate.id}
+                                            onClick={() => handleItemSelected(certificate.id)}
+                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === certificate.id
+                                                ? "bg-black text-white border-black"
+                                                : "border border-black text-black hover:bg-black hover:text-white"
+                                                }`}
+                                        >
+                                            {certificate.title}
+                                        </div>
+                                    ))}
+                                </div>
                             )}
                         </div>
                     </div>
