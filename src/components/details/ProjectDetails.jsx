@@ -114,12 +114,12 @@ function ProjectDetail({ project }) {
                             <div className="mt-6">
                                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Technologies Used</h3>
                                 <div className="flex flex-wrap gap-2">
-                                    {project.skills.map((skill, idx) => (
+                                    {project.tags.map((tag, idx) => (
                                         <span
                                             key={idx}
                                             className="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-medium"
                                         >
-                                            {skill}
+                                            {tag}
                                         </span>
                                     ))}
                                 </div>

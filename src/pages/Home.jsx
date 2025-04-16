@@ -66,8 +66,7 @@ const InfoSection = () => (
 );
 
 
-export default function Home()
-{
+export default function Home() {
     return (
         <div className="h-screen bg-gray-50 flex justify-center items-start pt-10">
             <div className="bg-white rounded-lg shadow-md w-full max-w-6xl">
