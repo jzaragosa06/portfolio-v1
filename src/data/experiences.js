@@ -13,11 +13,12 @@ const experiences = [
             {
                 title: "Application Tracking System (ATS)",
                 description: "Web application to track and manage applicants",
-                repository: "",
-                source: "",
+                repository: "sample.com",
+                source: "sample.com",
             }
         ],
         company: "Fullsuite Baguio",
+        companyInfo: "A BPO company in Baguio City, Benguet",
         startDate: "February 2025",
         endDate: "May 2025",
         responsibilities: ["Project Lead", "Design Database Schema", "Initiated the project"],

@@ -100,11 +100,12 @@ function ExperienceDetail({ experience }) {
                             <h3 className="text-lg font-medium text-gray-800 text-center">
                                 {experience.company}
                             </h3>
+                            <p className='text-sm text-gray-500'>{experience.companyInfo}</p>
                         </div>
                     </div>
 
                     {/* Skills Section */}
-                    <div>
+                    <div className='flex flex-col items-center'>
                         <h3 className="text-lg font-semibold text-gray-800 mb-3">Skills & Technologies</h3>
                         <div className="flex flex-wrap gap-2">
                             {experience.tags.map((tag, idx) => (

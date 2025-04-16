@@ -92,7 +92,7 @@ const Works = () => {
                                         <div
                                             key={article.id}
                                             onClick={() => handleItemSelected(article.id)}
-                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === article.id
+                                            className={`rounded-full px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === article.id
                                                 ? "bg-black text-white border-black"
                                                 : "border border-black text-black hover:bg-black hover:text-white"
                                                 }`}
