@@ -41,7 +41,7 @@ function ExperienceDetail({ experience }) {
                 {/* Right Content - Tags*/}
                 <div className="md:w-1/3">
                     <div>
-                        <h3 className="text-lg font-semibold text-gray-800">Technologies Used</h3>
+                        <h3 className="text-lg font-semibold text-gray-800 mb-3">Skills Learned</h3>
                         <div className="flex flex-wrap gap-2">
                             {experience.tags.map((tag, idx) => (
                                 <span
@@ -55,12 +55,13 @@ function ExperienceDetail({ experience }) {
                     </div>
 
                     {/* Project Image */}
-                    <div className="flex flex-col items-center space-y-2">
+                    <div className="flex flex-col items-center space-y-2 mt-6">
                         <img
                             src={experience.image}
                             alt={`Logo of ${experience.title}`}
-                            className="w-12 h-12 rounded-full object-fill"
+                            className="w-16 h-16 rounded-full object-cover"
                         />
+
                         <p className="text-xs text-gray-500 font-medium text-center">
                             {experience.company}
                         </p>
