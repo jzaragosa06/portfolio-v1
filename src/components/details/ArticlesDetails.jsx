@@ -26,7 +26,7 @@ function ArticleDetail({ article }) {
                             href={article.repository}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
+                            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
                         >
                             <FaGithub className="text-xl" />
                             <span>View Code</span>
@@ -36,7 +36,7 @@ function ArticleDetail({ article }) {
                                 href={article.deployment}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
+                                className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 <FaLink className="text-xl" />
                                 <span>Live Demo</span>
@@ -47,7 +47,7 @@ function ArticleDetail({ article }) {
                                 href={article.source}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
+                                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
                             >
                                 <FaMedium className="text-xl" />
                                 <span>Read Article</span>
