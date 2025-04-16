@@ -2,32 +2,28 @@
 const experiences = [
     {
         id: "1",
-        title: "exp 1",
-        subtitle: "sub",
-        description: "A web application developed using Node.js.",
+        title: "Software Engineer",
+        subtitle: "Internship at Fullsuite",
+        description: "Software engineering internship at Fullsuite, where theories are applied into practical applications.",
         image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
-        tags: ['time series', 'forecasting', 'laravel'],
-        fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
+        tags: ['MERN', 'Git', 'Github'],
+        fullDescription: "Software engineering internship at Fullsuite, where theories are applied into practical applications.",
         deployment: "",
-        screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
-        repository: "",
-        source: "",
-        company: "PSU - UCC",
+        projects: [
+            {
+                title: "Application Tracking System (ATS)",
+                description: "Web application to track and manage applicants",
+                repository: "",
+                source: "",
+            }
+        ],
+        company: "Fullsuite Baguio",
+        startDate: "February 2025",
+        endDate: "May 2025",
+        responsibilities: ["Project Lead", "Design Database Schema", "Initiated the project"],
+        achievements: ["Successfully deployed the project in Vercel", "Achieved increase in the productivity workflow of HR"],
     },
-    {
-        id: "2",
-        title: "exp2 2",
-        subtitle: "sub",
-        description: "A web application developed using Node.js.",
-        image: "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png",
-        tags: ['time series', 'forecasting', 'laravel'],
-        fullDescription: "A web application developed using Node.js. It features a force-directed graph of wikipedia articles and using Google Gemini Pro-text to relate information extracted from wiki articles.",
-        deployment: "",
-        screenshots: ["https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png", "https://www.datascienceportfol.io/static/profile_pics/pr10_522AC6CB762ADACFF4CC.png"],
-        repository: "",
-        source: "",
-        company: "PSU - UCC",
-    },
+
 ];
 
 export default experiences;
