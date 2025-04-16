@@ -16,25 +16,25 @@ const contentItems = [
     },
     {
         type: "image",
-        src: "https://i.pinimg.com/736x/3b/35/2a/3b352a9cf79ed5f0cb014c02aa7e650d.jpg",
+        src: "https://t4.ftcdn.net/jpg/02/22/47/85/360_F_222478566_O95CFavH8wKiXFFcaRjxNQ19yDsvaw6o.jpg",
         alt: "Placeholder",
-        className: "w-80 h-40 object-cover"
+        className: "w-80 h-80 object-cover"
     },
     {
         type: "text",
         content: "Backend • Data Analysis • Solving",
-        className: "text-4xl font-bold text-gray-800"
+        className: "text-3xl font-bold text-gray-800"
     },
     {
         type: "image",
-        src: "https://thumbs.dreamstime.com/b/cute-black-white-cat-sitting-white-background-cute-black-white-cat-sitting-105286579.jpg",
+        src: "https://static.vecteezy.com/system/resources/previews/006/696/150/non_2x/illustration-of-a-black-cat-peeking-out-from-the-corner-vector.jpg",
         alt: "Square Placeholder",
         className: "w-80 h-80 object-cover"
     },
     {
         type: "text",
         content: "Python | Laravel | PHP",
-        className: "text-4xl font-bold text-gray-800"
+        className: "text-3xl font-bold text-gray-800"
     }
 ];
 
