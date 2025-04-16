@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaGithub, FaLink, FaMedium, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLink, FaTimes } from 'react-icons/fa';
+import { FaMedium } from 'react-icons/fa6';
 
 function ArticleDetail({ article }) {
     const [isModalOpen, setIsModalOpen] = useState(false);

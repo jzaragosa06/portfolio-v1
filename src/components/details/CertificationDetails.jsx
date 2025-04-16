@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaCertificate, FaGithub, FaLink, FaTimes } from 'react-icons/fa';
+import { FaAward, FaCertificate, FaGithub, FaLink, FaTimes } from 'react-icons/fa';
 
 function CertificateDetail({ certificate }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +27,8 @@ function CertificateDetail({ certificate }) {
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors"
                         >
-                            <FaCertificate className="text-xl" />
+                            <FaLink />
+                            <FaAward className="text-xl" />
                             <span>Visit source</span>
                         </a>
                     </div>
