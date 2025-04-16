@@ -5,8 +5,9 @@ const user = {
     name: "Jun Jun Zaragosa",
     email: "junjunzaragosa2309@gmail.com",
     linkedin: "https://www.linkedin.com/in/jun-jun-zaragosa/",
-    github: "",
-    twitter: "",
+    github: "https://github.com/jzaragosa06",
+    twitter: "twitter.com",
+    medium: "https://medium.com/@junjunzaragosa2309",
     title: "Software Engineer Intern | Information Technology | DOST Scholar",
     about: `
             I am an information technology student major in web and mobile
