@@ -11,30 +11,30 @@ const contentItems = [
     },
     {
         type: "text",
-        content: "Tech Stack",
+        content: "Programmer | Scholar",
         className: "text-4xl font-bold text-gray-800"
     },
     {
         type: "image",
-        src: "https://static.vecteezy.com/system/resources/previews/006/696/150/non_2x/illustration-of-a-black-cat-peeking-out-from-the-corner-vector.jpg",
+        src: "https://i.pinimg.com/736x/3b/35/2a/3b352a9cf79ed5f0cb014c02aa7e650d.jpg",
         alt: "Placeholder",
         className: "w-80 h-40 object-cover"
     },
     {
         type: "text",
-        content: "React • Framer Motion • Tailwind",
-        className: "text-2xl text-blue-600"
+        content: "Backend • Data Analysis • Solving",
+        className: "text-4xl font-bold text-gray-800"
     },
     {
         type: "image",
         src: "https://thumbs.dreamstime.com/b/cute-black-white-cat-sitting-white-background-cute-black-white-cat-sitting-105286579.jpg",
         alt: "Square Placeholder",
-        className: "w-48 h-48 object-contain"
+        className: "w-80 h-80 object-cover"
     },
     {
         type: "text",
-        content: "Animation Gallery",
-        className: "text-3xl font-light italic text-purple-700"
+        content: "Python | Laravel | PHP",
+        className: "text-4xl font-bold text-gray-800"
     }
 ];
 
