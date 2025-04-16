@@ -76,7 +76,7 @@ const Works = () => {
                                         <div
                                             key={experience.id}
                                             onClick={() => handleItemSelected(experience.id)}
-                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === experience.id
+                                            className={`rounded-full px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === experience.id
                                                 ? "bg-black text-white border-black"
                                                 : "border border-black text-black hover:bg-black hover:text-white"
                                                 }`}
@@ -108,7 +108,7 @@ const Works = () => {
                                         <div
                                             key={certificate.id}
                                             onClick={() => handleItemSelected(certificate.id)}
-                                            className={`rounded-2xl px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === certificate.id
+                                            className={`rounded-full px-4 py-3 cursor-pointer text-sm md:text-base font-medium transition-all duration-200 border ${selectedItemId === certificate.id
                                                 ? "bg-black text-white border-black"
                                                 : "border border-black text-black hover:bg-black hover:text-white"
                                                 }`}
