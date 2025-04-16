@@ -15,10 +15,6 @@ const user = {
             strong passion in data analysis and data science
             `,
     skills: ["Node.JS", "Laravel", "Javascript", "Python", "PHP", "React", "Mysql", "PostreSQL", "ML/AI", "Data Analysis", "Excel", "Jasp", "SCRUM", "Backend-Dev", "Web-scraping", "Vercel", "Git", "Github"],
-
-
-
-
 }
 
 export default user; 

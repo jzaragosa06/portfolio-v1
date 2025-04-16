@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import user from '../data/user';
 import Animated from '../components/Animated';
 import downloadResume from '../utils/downloadResume';
+import { FaMedium } from 'react-icons/fa6';
 
 const Header = () => (
     <div className="flex justify-between items-center p-4 text-gray-700 text-sm">
@@ -26,6 +27,7 @@ const SocialIcons = () => (
     <div className="flex flex-col space-y-4">
         <a href={user.linkedin}><FaLinkedin className="text-xl hover:text-blue-500" /></a>
         <a href={user.github}><FaGithub className="text-xl hover:text-gray-800" /></a>
+        <a href={user.medium}><FaMedium className="text-xl hover:text-gray-800" /></a>
         <a href={user.twitter}><FaTwitter className="text-xl hover:text-blue-400" /></a>
     </div>
 );
