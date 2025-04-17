@@ -46,7 +46,7 @@ const experiences = [
         startDate: "February 2024",
         endDate: "February 2025",
         responsibilities: ["Project Lead", "Design Database Schema", "Initiated the project", "Trained Time Series Model"],
-        achievements: ["Achieved a model with 3% error for univariate time series model", "Successfully integrated AI to describe the result", "Collaborated with data analyst from UST for the model development"],
+        achievements: ["Achieved a algorithmic framework model with an average 3% error for univariate time series model", "Successfully integrated AI to describe the result", "Collaborated with data analyst from UST for the model development"],
     },
 ];
 

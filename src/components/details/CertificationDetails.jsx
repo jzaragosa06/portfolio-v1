@@ -37,7 +37,7 @@ function CertificateDetail({ certificate }) {
                 {/* Right Content - Tags*/}
                 <div className="md:w-1/3">
                     <div>
-                        <h3 className="text-lg font-semibold text-gray-800">Technologies Used</h3>
+                        <h3 className="text-lg font-semibold text-gray-800">Skills</h3>
                         <div className="flex flex-wrap gap-2">
                             {certificate.tags.map((tag, idx) => (
                                 <span
