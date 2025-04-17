@@ -7,6 +7,8 @@ import articles from "../data/articles";
 import ArticleDetail from "../components/details/ArticlesDetails";
 import experiences from "../data/experiences";
 import ExperienceDetail from "../components/details/ExperiencesDetails";
+import { FaBackward } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Works = () => {
     const [selectedSection, setSelectedSection] = useState('projects');
@@ -47,6 +49,13 @@ const Works = () => {
                             {section.charAt(0).toUpperCase() + section.slice(1)}
                         </div>
                     ))}
+                    <Link to={'/'}>
+                        <div
+                            className={`flex items-center justify-center rounded-full text-center px-5 py-2 md:px-6 md:py-2.5 cursor-pointer text-sm md:text-base font-medium whitespace-nowrap transition-all duration-200 border border-black text-black hover:bg-black hover:text-white`}
+                        >
+                            Back
+                        </div>
+                    </Link>
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-6 md:gap-8 w-full">
