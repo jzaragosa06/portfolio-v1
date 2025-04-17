@@ -6,8 +6,7 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Works from './pages/Works';
 
-function App()
-{
+function App() {
     return (
         <BrowserRouter>
             <Routes>
