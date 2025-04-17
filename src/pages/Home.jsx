@@ -8,20 +8,27 @@ import Animated from '../components/Animated';
 import downloadResume from '../utils/downloadResume';
 import { FaMedium } from 'react-icons/fa6';
 
-const Header = () => (
-    <div className="flex justify-between items-center p-4 text-gray-700 text-sm">
-        <div className="flex items-center space-x-2">
-            <HiOutlineMail />
-            <span>{user.email}</span>
+const Header = () => {
+    const openResume = () => {
+        window.open("/portfolio-v1/resume.pdf", "_blank")
+    }
+
+    return (
+        <div className="flex justify-between items-center p-4 text-gray-700 text-sm">
+            <div className="flex items-center space-x-2">
+                <HiOutlineMail />
+                <span>{user.email}</span>
+            </div>
+            <div className="flex items-center space-x-6">
+                <Link to="/works">Works</Link>
+                {/* <a href="#" className="hover:underline">Resume</a> */}
+                {/* <p onClick={downloadResume} className="hover:underline">Resume</p> */}
+                <p onClick={openResume} className="hover:underline">Resume</p>
+                <FiSettings />
+            </div>
         </div>
-        <div className="flex items-center space-x-6">
-            <Link to="/works">Works</Link>
-            {/* <a href="#" className="hover:underline">Resume</a> */}
-            <p onClick={downloadResume} className="hover:underline">Resume</p>
-            <FiSettings />
-        </div>
-    </div>
-);
+    );
+};
 
 const SocialIcons = () => (
     <div className="flex flex-col space-y-4">
