@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { FaGithub, FaLink, FaTimes, FaUserFriends, FaGraduationCap } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
-function ProjectDetail({ project }) {
+function ProjectDetail({ project })
+{
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -60,7 +61,7 @@ function ProjectDetail({ project }) {
                                     href={project.deployment}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                    className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-blue-700 transition-colors"
                                 >
                                     <FaLink className="text-xl" />
                                     <span>Live Demo</span>

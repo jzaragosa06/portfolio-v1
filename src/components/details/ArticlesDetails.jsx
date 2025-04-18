@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { FaGithub, FaLink, FaTimes } from 'react-icons/fa';
 import { FaMedium } from 'react-icons/fa6';
 
-function ArticleDetail({ article }) {
+function ArticleDetail({ article })
+{
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -36,7 +37,7 @@ function ArticleDetail({ article }) {
                                 href={article.deployment}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 <FaLink className="text-xl" />
                                 <span>Live Demo</span>
