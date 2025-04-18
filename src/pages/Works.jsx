@@ -68,7 +68,7 @@ const Works = () =>
                 <div className="flex flex-col lg:flex-row gap-6 md:gap-8 w-full">
                     {/* List */}
                     <div className="w-full lg:w-1/4 overflow-hidden">
-                        <div className="p-2 md:p-3 max-h-[50vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                        <div className="p-2 md:p-3 max-h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                             {selectedSection === "projects" && (
                                 <div className="space-y-2">
                                     {projects.map((project) => (
