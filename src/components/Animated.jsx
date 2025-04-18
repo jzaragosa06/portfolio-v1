@@ -27,7 +27,7 @@ const contentItems = [
     },
     {
         type: "image",
-        src: "https://static.vecteezy.com/system/resources/previews/006/696/150/non_2x/illustration-of-a-black-cat-peeking-out-from-the-corner-vector.jpg",
+        src: "https://t4.ftcdn.net/jpg/05/58/96/05/360_F_558960596_GmZ6UAW8IyMYUGYEGBu5wL8HOtfqneH0.jpg",
         alt: "Square Placeholder",
         className: "w-80 h-80 object-cover"
     },
@@ -38,33 +38,37 @@ const contentItems = [
     }
 ];
 
-const ContentItem = ({ item }) => {
+const ContentItem = ({ item }) =>
+{
     return (
-    <motion.div
+        <motion.div
             className="flex items-center justify-center h-full bg-white"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.1 }}
             transition={{ duration: 0.8 }}
-    >
+        >
             {item.type === "image" ? (
-        <img
+                <img
                     src={item.src}
                     alt={item.alt}
                     className={item.className}
-        />
+                />
             ) : (
                 <div className={item.className}>{item.content}</div>
             )}
-    </motion.div>
+        </motion.div>
     );
 };
 
-function AnimatedGallery() {
+function AnimatedGallery()
+{
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
+    useEffect(() =>
+    {
+        const interval = setInterval(() =>
+        {
             setCurrentIndex((prev) => (prev + 1) % contentItems.length);
         }, 3000); // Rotate every 3 seconds
 
