@@ -3,6 +3,7 @@ const articles = [
     {
         id: "1",
         title: "Using Google Earth Engine to Find Barrier Against Wind Terrain using Wind Direction and Elevation",
+        shortTitle: "Terrain Analysis Using GEE",
         subtitle: "Using Google Earth Engine to Find Barrier Against Wind Terrain using Wind Direction and Elevation",
         description: "",
         image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*i7ZHENVI2yXTvg6W",
@@ -15,6 +16,7 @@ const articles = [
     {
         id: "2",
         title: "Google Earth Engine & Python: Extracting Climate Data for Specific Region",
+        shortTitle: "Extracting data Using GEE",
         subtitle: "Google Earth Engine & Python: Extracting Climate Data for Specific Region",
         description: "",
         image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*OPlUdxUtFY08IUAuX1VgFw.jpeg",
@@ -26,6 +28,7 @@ const articles = [
     },
     {
         id: "3",
+        shortTitle: "Using AI for Node Graph",
         title: "Using LLM to Generate Data for D3.js Force Directed Graph (FDG)",
         subtitle: "Using LLM to Generate Data for D3.js Force Directed Graph (FDG)",
         description: "",
@@ -38,6 +41,7 @@ const articles = [
     },
     {
         id: "4",
+        shortTitle: "Websraping using Python & BeautifulSoup",
         title: "Web Scraping Real Estate Data with Python and BeautifulSoup",
         subtitle: "Web Scraping Real Estate Data with Python and BeautifulSoup",
         description: "",
@@ -50,6 +54,7 @@ const articles = [
     },
     {
         id: "6",
+        shortTitle: "Naïve Approach to Combining Time Series Data",
         title: "Naïve Approach to Combining Time Series Data",
         subtitle: "Naïve Approach to Combining Time Series Data",
         description: "",
@@ -62,6 +67,7 @@ const articles = [
     },
     {
         id: "7",
+        shortTitle: "Protein Sequence Alignment with Python",
         title: "Finding Similar Protein Sequences with BLAST in Python",
         subtitle: "Finding Similar Protein Sequences with BLAST in Python",
         description: "",
@@ -74,6 +80,7 @@ const articles = [
     },
     {
         id: "8",
+        shortTitle: "Stocks & Market Index Correlation Analysis",
         title: "Stocks & Market Index Correlation Analysis",
         subtitle: "Stocks & Market Index Correlation Analysis",
         description: "",
@@ -86,6 +93,7 @@ const articles = [
     },
     {
         id: "9",
+        shortTitle: "Analysing PSEi Using Python",
         title: "Analysis of Philippine Stock Exchange Index’s (PSEi) Performance Over the Year Using Python",
         subtitle: "Analysis of Philippine Stock Exchange Index’s (PSEi) Performance Over the Year Using Python",
         description: "",
@@ -98,6 +106,7 @@ const articles = [
     },
     {
         id: "10",
+        shortTitle: "Time Series Forecast with AI",
         title: "Using Large Language Model to Provide Context-Specific Explanation to Time Series Forecast",
         subtitle: "Using Large Language Model to Provide Context-Specific Explanation to Time Series Forecast",
         description: "",
