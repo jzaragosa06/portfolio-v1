@@ -1,5 +1,18 @@
 const projectsData = [
     {
+        id: "101",
+        title: "FullSuite ATS",
+        subtitle: "Application Tracking System for FullSuite Baguio",
+        description: "A ATS web application developed using MERN stack (Mysql)",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQFimYt6iVisMA/profile-treasury-image-shrink_800_800/B56ZZYdtVFGoAY-/0/1745240906019?e=1745848800&v=beta&t=frbhBuTgDfYxzsjPRGUl1yNyeG47W5TdE8_ptzu9T4Y",
+        tags: ['ATS', 'React', 'Node JS', 'Backend API', 'Postman', 'Git', 'Github', 'SCRUM', 'Vercel'],
+        fullDescription: "Application Tracking System for FullSuite Baguio. The web application was developed using MERN stack (Mysql). This application was developed to help the organization manage, track, and improve the processing of applicants. ",
+        deployment: "https://ats.kriyahr.com/ats#",
+        repository: "https://github.com/jzaragosa06/ats-backend",
+        source: "https://github.com/jzaragosa06/ats-backend",
+        skillsLearned: ['ATS', 'React', 'Node JS', 'Backend API', 'Postman', 'Git', 'Github', 'SCRUM', 'Vercel', 'Slack Integration', 'Version Control', 'Automated Email'],
+    },
+    {
         id: "1",
         title: "Brainstorm AI",
         subtitle: "Interactive Node based Idea Explanation/Geneation",
