@@ -10,7 +10,7 @@ const user = {
     medium: "https://medium.com/@junjunzaragosa2309",
     title: "Software Engineer Intern | Information Technology | DOST Scholar",
     about: `
-            I am an information technology student major in web and mobile
+            I am an information technology  major in web and mobile
             technologies development. In addition to building web systems, I also have a
             strong passion in data analysis and data science
             `,
