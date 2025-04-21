@@ -5,8 +5,9 @@ import { FiSettings } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import user from '../data/user';
 import Animated from '../components/Animated';
-import downloadResume from '../utils/downloadResume';
 import { FaMedium } from 'react-icons/fa6';
+import { FiArrowRight } from 'react-icons/fi';
+
 
 const Header = () => {
     const openResume = () => {
@@ -21,8 +22,6 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-6">
                 <Link to="/works">Works</Link>
-                {/* <a href="#" className="hover:underline">Resume</a> */}
-                {/* <p onClick={downloadResume} className="hover:underline">Resume</p> */}
                 <p onClick={openResume} className="hover:underline">Resume</p>
                 <FiSettings />
             </div>
@@ -65,7 +64,18 @@ const InfoSection = () => (
                         </div>
                     ))}
                 </div>
+
+                <Link to="/works">
+                    <div className="flex justify-center items-center mt-6 animate-bounce">
+                        <div className="flex items-center gap-2 border border-black rounded-2xl px-4 py-2 text-black font-medium text-sm transition-all duration-300 hover:text-white hover:bg-black">
+                            Explore
+                            <FiArrowRight className="text-base" />
+                        </div>
+                    </div>
+                </Link>
+
             </div>
+
             {/* Animated container */}
             <div className="w-1/2">
                 <Animated />
