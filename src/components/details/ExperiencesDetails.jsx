@@ -118,37 +118,6 @@ function ExperienceDetail({ experience }) {
                             ))}
                         </div>
                     </div>
-
-                    {/* Links Section */}
-                    {(experience.repository || experience.deployment) && (
-                        <div>
-                            <h3 className="text-lg font-semibold text-gray-800 mb-3">Links</h3>
-                            <div className="space-y-3">
-                                {experience.repository && (
-                                    <a
-                                        href={experience.repository}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-3 text-gray-700 hover:text-black transition-colors p-3 bg-gray-50 rounded-lg"
-                                    >
-                                        <FaGithub className="text-xl" />
-                                        <span>Repository</span>
-                                    </a>
-                                )}
-                                {experience.deployment && (
-                                    <a
-                                        href={experience.deployment}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-3 text-gray-700 hover:text-black transition-colors p-3 bg-gray-50 rounded-lg"
-                                    >
-                                        <FaLink className="text-xl" />
-                                        <span>Live Deployment</span>
-                                    </a>
-                                )}
-                            </div>
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

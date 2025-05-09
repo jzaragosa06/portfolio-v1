@@ -7,21 +7,21 @@ const experiences = [
         description: "Software engineering internship at Fullsuite, where theories are applied into practical applications.",
         image: "https://media.licdn.com/dms/image/v2/D560BAQEDGebOpuJviQ/company-logo_200_200/company-logo_200_200/0/1690116252637/fullsuite_logo?e=2147483647&v=beta&t=o2nd-4DNYXQwJccynu5kw2Rv0tcd4yq_r8lXf_NQlak",
         tags: ['Node.JS', "Javascript", "MERN", "Git", "Github", "Postman", "Python"],
-        fullDescription: "Building a website using React.js, Node.js, MySQL, and Express. Gaining hands-on experience in coding standards, prototyping, and the software design process. Collaborating with software engineers to solve business needs. ",
+        fullDescription: "Collaborated in developing an Application Tracking System (ATS) for FullSuite Baguio using React.js, Node.js, MySQL, and Express.js. Gained hands-on experience in full-cycle software development, including adherence to coding standards, prototyping, and software design processes. Worked closely with software engineers to address real-world business needs. ",
         deployment: "",
         projects: [
             {
                 title: "Application Tracking System (ATS)",
-                description: "Web application to track and manage applicants",
+                description: "Web application to track and manage applicants. The ATS is designed to improve the hiring process by automating and organizing the different stages of talent acquisition.",
                 repository: "https://github.com/jzaragosa06/ats-frontend",
-                source: "https://ats-hr.vercel.app/login",
+                source: "https://ats.kriyahr.com",
             }
         ],
         company: "Fullsuite Baguio",
         companyInfo: "A BPO company in Baguio City, Benguet. Empowering startups, Fueling careers.",
         startDate: "February 2025",
         endDate: "May 2025",
-        responsibilities: ["Project Lead", "Design Database Schema", "Initiated the project"],
+        responsibilities: ["Project Lead", "Backend Developer", "Contributed to designing the database schema", "Initiated the project", "Oversaw CI/CD deployment on Vercel"],
         achievements: ["Successfully deployed the project in Vercel", "Achieved increase in the productivity workflow of HR", "Collaborated with software engineers to ensure smooth flow of the project"],
     },
     {
@@ -31,8 +31,7 @@ const experiences = [
         description: "Created Time series models and system to forecast time series data, e.g., COVID 19 cases",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_kOPjGVfonSqjgx578gDXnu8NtYtG-rPeLg&s",
         tags: ['Node.JS', "Javascript", "MERN", "Git", "Github", "Postman", "Python"],
-        fullDescription: "spearheaded the development of data quality assessment processes and played a pivotal role in constructing a resilient infrastructure for integrated data storage.",
-        deployment: "spearheaded the development of data quality assessment processes and played a pivotal role in constructing a resilient infrastructure for integrated data storage.",
+        fullDescription: "Spearheaded the development of the automated time series forecasting web application system. Played a pivotal role in constructing a resilient infrastructure and scalable system using PHP's Laravel Python's Flask framework. ",
         projects: [
             {
                 title: "Automated Time Series Forcasting for Univariate and Multivariate Time Series: Using Hybrid Model",
