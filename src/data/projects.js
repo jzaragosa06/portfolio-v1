@@ -7,9 +7,9 @@ const projectsData = [
         image: "https://media.licdn.com/dms/image/v2/D562DAQFimYt6iVisMA/profile-treasury-image-shrink_800_800/B56ZZYdtVFGoAY-/0/1745240906019?e=1747036800&v=beta&t=ba2EUvAn58L2YHogVluzwUC84W9L3SnRCQL_MRtDOuk",
         tags: ['ATS', 'React', 'Node JS', 'Backend API', 'Postman', 'Git', 'Github', 'SCRUM', 'Vercel'],
         fullDescription: "Application Tracking System for FullSuite Baguio. The web application was developed using MERN stack (Mysql). This application was developed to help the organization manage, track, and improve the processing of applicants. ",
-        deployment: "https://ats.kriyahr.com/ats#",
-        repository: "https://github.com/jzaragosa06/ats-backend",
-        source: "https://github.com/jzaragosa06/ats-backend",
+        deployment: "https://ats.kriyahr.com",
+        repository: "https://github.com/fullsuite-se/ats-frontend",
+        source: "https://github.com/fullsuite-se/ats-frontend",
         skillsLearned: ['ATS', 'React', 'Node JS', 'Backend API', 'Postman', 'Git', 'Github', 'SCRUM', 'Vercel', 'Slack Integration', 'Version Control', 'Automated Email'],
     },
     {
