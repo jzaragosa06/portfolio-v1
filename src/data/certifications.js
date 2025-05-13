@@ -7,7 +7,9 @@ const certificates = [
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
         tags: ['API', 'RestFul API', 'Express.js', 'OOP', 'MongoDB'],
-        fullDescription: "Using Node.js, Expres.js, and MongoDB for a backend development API",
+        fullDescription: `Using Node.js, Expres.js, and MongoDB for a backend development API. From this, 
+        I've learned to wirte backend apps with Node.js and npm. I've also built web application with the Express framework, 
+        built microservices that uses MongoDB and Mongoose library. `,
         source: "https://www.freecodecamp.org/certification/JunJun3213/back-end-development-and-apis",
     },
     {
@@ -17,7 +19,12 @@ const certificates = [
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
         tags: ['SQL', 'PostgreSQL', 'Data Analysis', 'Python', 'Data Visualization', 'Statistics'],
-        fullDescription: "Creating and executing sql (PostreSQL) queries to retrieve and analyze data",
+        fullDescription: `Certified Data Analyst Associate with hands-on experience creating and 
+        executing SQL (PostgreSQL) queries for data extraction, cleaning, joining, and aggregation. 
+        Proficient in assessing data quality, validating datasets, and calculating key metrics to uncover
+         insights and support data-driven decision-making. Skilled in performing exploratory data analysis, 
+         interpreting visualizations, and applying statistical concepts to support hypothesis testing and experimentation. 
+         Capable of managing practical business problems through validated, metrics-based solutions, as demonstrated in certification assessments.`,
         source: "https://www.datacamp.com/certificate/DAA0015475457456",
     },
     {
@@ -26,8 +33,12 @@ const certificates = [
         subtitle: "Issued by DeepLearning.AI: Supervised Machine Learning - Regression and Classification",
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
-        tags: ['Machine Learning', 'Regression', 'Pandas', 'Python', 'Statistics'],
-        fullDescription: "The course explores the machine learning approach to regression and classification task.",
+        tags: ['Machine Learning', 'Regression Analysis', 'Classification and Regression Tree (CART)',  'Pandas', 'Python', 'Numpy', 'Scikit-learn', 'Statistical Modeling'],
+        fullDescription: `This course provides me practical introduction to supervised machine learning techniques 
+        for regression and classification tasks using Python. I’ve learned to build and evaluate predictive models
+         using popular libraries such as NumPy and scikit-learn. Key concepts include linear regression, logistic regression, 
+         and decision trees (CART). The course also covers essential skills in statistical modeling, predictive analytics, 
+         and artificial intelligence. This has given me a tool  to apply machine learning to real-world problems.`,
         source: "https://www.coursera.org/account/accomplishments/verify/7XN4PLKUZM4A",
     },
     {
@@ -47,7 +58,15 @@ const certificates = [
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
         tags: ['Python', 'Financial Analysis', 'Data Analysis', 'Statistics', 'Computer Literacy'],
-        fullDescription: "Using Python to perform Financial Analysis on Time Series",
+        fullDescription: `
+        Completed a four-module certification focused on Financial Analysis using Python, with a strong emphasis on time series data and real-world stock market applications. This course integrated both programming and statistical theory to deliver practical skills in analyzing and modeling financial data. Key learning outcomes included:
+        
+        <ul class="list-disc pl-5">
+          <li>Importing, cleaning, and visualizing stock data using pandas and matplotlib in a Jupyter Notebook environment.</li>
+          <li>Engineering new financial metrics by manipulating multi-dimensional datasets.</li>
+          <li>Applying statistical concepts such as distributions, confidence intervals, and regression to financial datasets.</li>
+          <li>Constructing a trading strategy using multiple linear regression and evaluating its performance through key investment indicators.</li>
+        </ul>`,
         source: "https://www.coursera.org/account/accomplishments/verify/ZV8PURPRJV2S",
     },
     {
@@ -57,7 +76,7 @@ const certificates = [
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
         tags: ['C#', 'Command', 'Microsoft', 'Driver'],
-        fullDescription: "Learned the basics of C# and its various applications. Build simple console apps using C#",
+        fullDescription: `Completed a comprehensive introduction to C# programming, covering core concepts such as variables, data types, control structures, and object-oriented principles. Gained hands-on experience by building simple console applications, and developed the foundational skills needed to create functional software using C#.`,
         source: "https://www.freecodecamp.org/certification/JunJun3213/foundational-c-sharp-with-microsoft",
     },
     {
@@ -67,7 +86,7 @@ const certificates = [
         description: "",
         image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
         tags: ['IT', 'Database', 'Software Development', 'Testing', 'DevOps'],
-        fullDescription: "Certification issued by the Korea's IITP to gauge the proficiency of IT",
+        fullDescription: ``,
         source: "https://drive.google.com/file/d/1SfddlUcx5-rb12Eu68NvNMnfjNi1hxVz/view",
     },
 ];
