@@ -16,9 +16,11 @@ function CertificateDetail({ certificate }) {
                     <h1 className="text-3xl font-bold text-gray-800 mb-2">{certificate.title}</h1>
                     <p className="text-gray-600 text-lg mb-6">{certificate.subtitle}</p>
 
-                    <div className="prose text-gray-700 mb-8 space-y-4">
-                        {certificate.fullDescription}
-                    </div>
+                    <div
+                        className="prose text-gray-700 mb-8 space-y-4"
+                        dangerouslySetInnerHTML={{ __html: certificate.fullDescription }}
+                    ></div>
+
 
                     <div className="flex gap-4 mb-8">
                         <a
