@@ -5,7 +5,7 @@ const certificates = [
         title: "Back End Development and APIs",
         subtitle: "Issued by FreeCodeCamp",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: '/backend.png',
         tags: ['API', 'RestFul API', 'Express.js', 'OOP', 'MongoDB'],
         fullDescription: `Using Node.js, Expres.js, and MongoDB for a backend development API. From this, 
         I've learned to wirte backend apps with Node.js and npm. I've also built web application with the Express framework, 
@@ -17,7 +17,7 @@ const certificates = [
         title: "Data Analyst Associate",
         subtitle: "Issued by DataCamp",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: 'da.jpeg',
         tags: ['SQL', 'PostgreSQL', 'Data Analysis', 'Python', 'Data Visualization', 'Statistics'],
         fullDescription: `Certified Data Analyst Associate with hands-on experience creating and 
         executing SQL (PostgreSQL) queries for data extraction, cleaning, joining, and aggregation. 
@@ -32,7 +32,7 @@ const certificates = [
         title: "Supervised Machine Learning",
         subtitle: "Issued by DeepLearning.AI: Supervised Machine Learning - Regression and Classification",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: 'ml.jpeg',
         tags: ['Machine Learning', 'Regression Analysis', 'Classification and Regression Tree (CART)',  'Pandas', 'Python', 'Numpy', 'Scikit-learn', 'Statistical Modeling'],
         fullDescription: `This course provides me practical introduction to supervised machine learning techniques 
         for regression and classification tasks using Python. I’ve learned to build and evaluate predictive models
@@ -46,7 +46,7 @@ const certificates = [
         title: "Introduction to Statistics",
         subtitle: "Issued by Stanford University Through Coursera",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: 'stat.jpeg',
         tags: ['Data Analysis', 'Analytical Skill', 'Python', 'Statistics'],
         fullDescription: "Understanding the foundation of statistics for data science application",
         source: "https://www.coursera.org/account/accomplishments/verify/9SLR9SJM27RE",
@@ -56,7 +56,7 @@ const certificates = [
         title: "Python & Statistics for Financial Analysis",
         subtitle: "Issued by Hongkong University of Science and Technology Through Coursera",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: 'finance.jpeg',
         tags: ['Python', 'Financial Analysis', 'Data Analysis', 'Statistics', 'Computer Literacy'],
         fullDescription: `
         Completed a four-module certification focused on Financial Analysis using Python, with a strong emphasis on time series data and real-world stock market applications. This course integrated both programming and statistical theory to deliver practical skills in analyzing and modeling financial data. Key learning outcomes included:
@@ -74,7 +74,7 @@ const certificates = [
         title: "Foundational C# with Microsoft",
         subtitle: "Issued by FreeCodeCamp",
         description: "",
-        image: "https://cdn-payscale.com/content/placeholder-images/certification-placeholder.png",
+        image: 'csharp.png',
         tags: ['C#', 'Command', 'Microsoft', 'Driver'],
         fullDescription: `Completed a comprehensive introduction to C# programming, covering core concepts such as variables, data types, control structures, and object-oriented principles. Gained hands-on experience by building simple console applications, and developed the foundational skills needed to create functional software using C#.`,
         source: "https://www.freecodecamp.org/certification/JunJun3213/foundational-c-sharp-with-microsoft",
