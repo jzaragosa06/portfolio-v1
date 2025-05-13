@@ -4,7 +4,7 @@ const projectsData = [
         title: "FullSuite ATS",
         subtitle: "Application Tracking System for FullSuite Baguio",
         description: "A ATS web application developed using MERN stack (Mysql)",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQFimYt6iVisMA/profile-treasury-image-shrink_800_800/B56ZZYdtVFGoAY-/0/1745240906019?e=1747036800&v=beta&t=ba2EUvAn58L2YHogVluzwUC84W9L3SnRCQL_MRtDOuk",
+        image: 'ats.jpeg',
         tags: ['ATS', 'React', 'Node JS', 'Backend API', 'Postman', 'Git', 'Github', 'SCRUM', 'Vercel'],
         fullDescription: "Application Tracking System for FullSuite Baguio. The web application was developed using MERN stack (Mysql). This application was developed to help the organization manage, track, and improve the processing of applicants. ",
         deployment: "https://ats.kriyahr.com",
